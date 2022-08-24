@@ -1,0 +1,721 @@
+/* ============= Estilos ============= */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  min-height: 100vh;}
+
+.home {
+  background: white;
+  background-repeat: repeat;
+  padding: 0;
+  font-family: "Via Sans" Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#texto-footer {
+  font-size: 18px;
+  padding-top: 1.5%;
+  margin: auto; 
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+/* ============= Logo ============= */
+/* Caracteristicas de la barra de navegación: */
+/* Tamaño del logotipo */
+
+
+#logo1 {
+  margin-top: 0px;
+  height: 70px;
+  width: 100px;
+}
+
+#logo1:hover {
+  overflow: hidden;
+  transform:scale(1.1);
+}
+
+/* Tamaño de iconos*/
+
+
+.hidden-xs {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
+.hidden-xs:hover {
+  transform:scale(1.2);
+}
+
+/* Fondo del container del navbar */
+.navbar {
+  background-color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+}
+
+.nav-item {
+  justify-content: flex-start;
+}
+
+.items {
+  height: 100px;
+  padding-bottom: 0px;
+}
+
+#cabecera {
+  margin-top: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  width: 100%;
+}
+
+h1 {
+  color:rgb(0, 80, 94);
+  font-weight: bold;
+}
+
+h3 { 
+  font-weight: 300px; 
+  color: rgb(0, 77, 93);
+}
+
+.h5 {
+  font-weight: bold;
+}
+
+/* Tablero eléctrico Sumergible */
+
+.w3-light-grey {
+  margin: auto;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  width: 35%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.w3-light-grey-alert {
+  margin: auto;
+  margin-bottom: 4%;
+  margin-top: 0%;
+  width: 40%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+#izquierda {
+  text-align: center;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+#derecha {
+  text-align: center;
+  position: relative;
+  border: none;
+  background-color: transparent;
+}
+
+#derecha1 {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5%;
+  width: 8%;
+  border: none;
+  background-color: transparent;
+}
+
+.w3-content-alert {
+  margin: 0px;
+  width: 33%;
+  border: none;
+  background-color: transparent;
+  color: rgb(0, 77, 93);
+  font-weight: bold;
+}
+
+#derecha:active {
+  transform: scale(1.15);
+  filter: saturate(180%)
+}
+
+#izquierda:active {
+  transform: scale(1.09);
+  filter: saturate(180%)
+  
+}
+
+/* Linea divisiora */
+
+.linea_divisora1 {
+  border-color: rgb(244, 216, 15); 
+  background-color: rgb(244, 216, 15);
+  height: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: relative;
+}
+
+.linea_divisora2 {
+  border-color: rgb(0, 77, 93); 
+  background-color: rgb(0, 77, 93);
+  height: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: relative;
+}
+
+.linea_divisora3 {
+  border-color: rgb(141, 191, 198); 
+  background-color: rgb(141, 191, 198);
+  height: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: relative;
+}
+
+/* Para que los items del navbar se muestren a la izquierda de la pantalla */
+
+#navbarSupportedContent {
+  justify-content: flex-end;
+  width: 50px;
+}
+
+/* Base del template */
+
+.base {
+  background: rgb(0, 80, 94);
+  color: white;
+  height: 120%;
+  width: 100%;
+  margin: auto;
+}
+
+.label-default{
+  display: none;
+  font-weight: bold;
+}
+
+footer p {
+	color: white;
+	font-size: 18px;
+	letter-spacing: .3px;
+  text-align: center;
+  margin: auto;
+}
+
+hgroup { 
+	text-align:center;
+  font-size: large;
+}
+
+input {
+	display: block;
+	width: 100%;
+}
+
+/* Interfaz de control */
+
+.w3-twothird {
+  width: 40%;
+  margin: auto;
+  position: relative;
+  transition: all 500ms ease-out;
+}
+
+.alertas-titulo {
+  color: rgb(228, 149, 7);
+  background-color:rgb(2, 83, 97);
+  width: 35%; 
+  margin: auto;
+  font-weight: bold;
+}
+
+
+#derecha2 {
+  width: 50px;
+  margin-top: 0%;
+}
+
+/* //////////////////////Responsive Styles/////////////////////// */
+
+
+
+@media (max-height: 664px) {              /*======= Mayor de 664 px (Alto) =======*/
+
+  /* Tablero eléctrico Sumergible */
+.w3-light-grey {
+  height: 230px;
+  margin: auto;
+  width: 45%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#izquierda {
+  text-align: center;
+  position: relative;
+}
+
+#derecha {
+  text-align: center;
+  position: relative;
+}
+
+}
+
+@media (min-height: 790px) {                   /*======= Mayor de 790 px (Alto) =======*/
+
+  .w3-light-grey {
+    height: 230px;
+
+  }
+}
+@media (min-height: 710px) {                  /*======= Mayor de 710 px (Alto) =======*/
+
+  .w3-light-grey {
+    height: 230px;
+  }
+}
+
+@media (min-width: 1200px) {           /*======= Mayor de 1200 px (Ancho) =======*/
+
+.hidden-xs {
+  width: 65px;
+  height: 65px;
+}
+
+.visible-xs {                 
+  display: none;
+}
+
+  .nav-link {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .base {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    }
+
+    .color_letras_servicios2 {
+      font-size: 1.5vw;
+      margin: 0;
+  
+    }
+}
+
+
+@media (max-width: 1200px) {                  /*======= Menos de 1200 px (Ancho) =======*/
+
+  .img-responsive{
+    width: 22,7vw;
+    height: 21,2vh;
+    justify-content: center;
+    object-fit: scale-down;
+    padding: 0px;
+
+  }
+
+  .viewport {
+    height: 0px;
+  }
+
+  .base {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    }
+
+    .navbar-nav {
+      position: relative;
+      z-index: 10000;
+      background-color: white;
+
+    }
+
+    .w3-content-alert {
+      margin: auto;
+      margin-bottom: 3%;
+      margin-top: 0%;
+      margin-left: 1%;
+      margin-right: 1%;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      font-size: 15px;
+    }
+
+    .w3-twothird {
+      width: 45%;
+    }
+
+    #derecha1 {
+      width: 10%;
+      border: none;
+      background-color: transparent;
+    }
+
+    #texto-footer {
+      font-size: 16px;
+    }
+
+  }
+
+@media (max-width: 1000px) {              /*======= Menos de 1000 px (Ancho) =======*/
+
+  #derecha1 {
+    width: 12%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .w3-twothird {
+    width: 48%;
+  }
+
+  .w3-content-alert {
+    font-size: 14px;
+  
+}
+
+.w3-light-grey-alert {
+  width: 50%;
+}
+
+.w3-light-grey {
+  width: 50%;
+
+}
+
+#texto-footer {
+  font-size: 15px;
+}
+}
+
+@media (max-width: 900px) {  /*======= Menos de 900 px (Ancho) =======*/
+
+  #derecha1 {
+    width: 12%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .visible-xs {
+    display: none;
+
+  }
+
+  .footer {
+    font-size: 2vw;
+  }
+
+  .w3-twothird {
+    width: 55%;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  #derecha1 {
+    width: 13%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .w3-light-grey-alert {
+    width: 55%;
+  }
+
+  #texto-footer {
+    font-size: 14px;
+  }
+}
+
+
+
+@media (max-width:768px) {     /*======= Menos de 768 px (Ancho) =======*/ 
+
+  /* Menu inical */
+  .navbar-light {
+    height: 80px;
+    padding: 0;
+    position: relative;
+  }
+
+  .hidden-xs {
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+
+  .footer {
+    font-size: 2vw;
+  }
+
+  .navbar-light {
+    height: 100px;
+    padding: 0;
+    position: relative;
+  }
+
+  .base {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  }
+
+  hgroup { 
+    text-align:center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: large;
+  }
+
+  #derecha2 {
+    width: 40px;
+  }
+
+  .w3-twothird {
+    width: 58%;
+  }
+
+  #derecha1 {
+    width: 14%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .w3-light-grey {
+    width: 60%;
+}
+#texto-footer {
+  font-size: 13px;
+}
+
+.w3-light-grey-alert {
+  margin-bottom: 5%;
+}
+
+}
+
+@media (max-width: 700px) {
+  .w3-twothird {
+    width: 65%;
+  }
+
+  #derecha1 {
+    width: 15%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .w3-content-alert {
+    font-size: 13px;
+}
+
+.alertas-titulo {
+  width: 45%;
+}
+}
+
+@media (max-width: 576px) {       /*======= Menos de 576 px =======*/
+
+  .base {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    }
+    
+  .w3-twothird {
+    width: 72%;
+    font-size: 15px;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+
+    #derecha1 {
+      width: 16%;
+      border: none;
+      background-color: transparent;
+    }
+
+    .w3-content-alert {
+      font-size: 5px;
+}
+
+.w3-light-grey-alert {
+  width: 60%;
+  margin-bottom: 6%;
+}
+
+.w3-light-grey {
+  width: 65%;
+}
+
+#texto-footer {
+  font-size: 12px;
+}
+}
+
+@media (max-width: 500px) {
+
+  .w3-twothird {
+    width: 78%;
+    font-size: 14px;
+  }
+
+  #derecha1 {
+    width: 17%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .w3-light-grey {
+    width: 68%;
+  }
+}
+
+@media (max-width:450px) {     /*======= Menos de 400 px =======*/
+  
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: medium;
+  }
+
+  .w3-twothird {
+    width: 85%;
+    font-size: 12px;
+  }
+  
+  h5 {
+    font-size: 16px;
+  }
+
+  #derecha1 {
+    width: 19%;
+    border: none;
+    background-color: transparent;
+  }
+
+  .w3-light-grey-alert {
+    width: 65%;
+    font-size: 2px;
+  }
+
+  .w3-light-grey {
+    width: 70%;
+  }
+
+  #texto-footer {
+    font-size: 10px;
+  }
+
+  .alertas-titulo {
+    width: 60%;
+  }
+}
+
+@media (max-width:300px) { 
+  #derecha2 {
+  width: 35px;
+}
+
+.w3-twothird {
+  width: 95%;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+#derecha1 {
+  width: 23%;
+  border: none;
+  background-color: transparent;
+}
+
+.w3-light-grey-alert {
+  width: 70%;
+  margin-bottom: 8%;
+}
+
+#texto-footer {
+  font-size: 8px;
+}
+
+.alertas-titulo {
+  width: 70%;
+}
+
+}
+
+
+@media (hover: hover) {
+  .capa:hover {
+    opacity: 1;
+  }
+
+  .w3-content:hover {
+    filter: saturate(180%)
+  }
+}

@@ -1,0 +1,920 @@
+/* ============= Estilos ============= */
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  min-height: 100vh;}
+
+.home {
+  background: white;
+  background-repeat: repeat;
+  padding: 0;
+  font-family: "Via Sans" Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color:rgb(0, 80, 94);
+  font-weight: bold;
+}
+
+h3 { 
+  font-weight: 300px; 
+  color: rgb(0, 77, 93);
+  font-weight: bold;
+}
+
+h5 { color: rgb(0, 77, 93);
+  font-weight: bold; 
+}
+
+p { 
+  line-height: 25px; 
+  text-align: left; 
+  font-size: large;
+}
+
+#texto-footer {
+  font-size: 1em;
+  padding-top: 0.7%;
+  margin: auto; 
+  color: white;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Ajuste de las imagenes y texto del Home */
+.prueba-responsive {
+  float: left;
+  width: 50%;
+}
+
+.prueba-responsive2 {
+  float: right;
+  width: 50%;
+  padding: 2%;
+}
+
+.prueba-responsive3 {
+  float: right;
+  width: 50%;
+  padding: 1%;
+}
+
+.prueba-responsive4 {
+  float: left;
+  width: 50%;
+  padding: 2%;
+}
+
+/* Tablero eléctrico Sumergible */
+
+.w3-light-grey {
+  height: 230px;
+  margin: auto;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  width: 45%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.w3-light-grey-alert {
+  height: 150px;
+  margin: auto;
+  margin-bottom: 1%;
+  margin-top: 0%;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.w3-content {
+  padding: 1%;
+}
+
+#izquierda {
+  text-align: center;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+#derecha {
+  text-align: center;
+  position: relative;
+  border: none;
+  background-color: transparent;
+}
+
+#derecha1 {
+  margin: auto;
+  width: 10%;
+  border: none;
+  background-color: transparent;
+}
+
+/* ============= Logo ============= */
+
+/* Caracteristicas de la barra de navegación: */
+/* Tamaño del logotipo */
+
+#logo-tei {
+  margin-top: 0px;
+  height: 75px;
+}
+
+/* Animacion del logo de TEI */
+#logo-tei:hover {
+  transform:scale(1.1);
+}
+
+/* Tamaño de iconos*/
+.hidden-xs {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
+/* Animacion de los iconos */
+.hidden-xs:hover {
+  transform:scale(1.2);
+}
+
+
+/* Fondo del container del navbar */
+
+#container-fluid {
+  background-color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 100px;
+} 
+
+.navbar {
+  background-color: white;
+  height: 100px;
+}
+
+
+/* Imagenes de presentacion */
+.presentacion-TEI {
+  width: 100%;
+  padding: 2%;
+}
+
+.campo-TEI {
+  width: 100%;
+  padding: 2%;
+}
+
+/* El div principal del home  */
+#cabecera {
+  background-color: white;
+  margin-top: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  height: 100%;
+}
+
+/* El div principal de la pagina de nosotros */
+#cabecera-nosotros {
+  background:rgb(110, 180, 222);
+  margin-top: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  width: 100%;
+}
+
+/* Seccion de quienes somos */
+#quienes-somos {
+  padding: 3%;
+  position: relative;
+  height: 100%;
+  width: 85%;
+  background-color: white;
+}
+
+/* Seccion de contactos / div de los iconos */
+#containerCentral {
+  background-color: white;
+  margin-top: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  height: 100px;
+  width: auto;
+}
+
+/* Titulos */
+.tei-texto {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.tei-texto-contacto {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Correo de contacto en la pagina de inicio */
+#correo-inicio:hover {
+	text-decoration: underline;
+  text-decoration-color: rgb(141, 191, 198);;
+}
+
+/* Lineas divisiora de los colores de la marca*/
+
+.linea_divisora1 {
+  border-color: rgb(244, 216, 15); 
+  background-color: rgb(244, 216, 15);
+  height: 6px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: relative;
+}
+
+.linea_divisora2 {
+  border-color: rgb(0, 77, 93); 
+  background-color: rgb(0, 80, 94);
+  height: 6px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: relative;
+}
+
+.linea_divisora3 {
+  border-color: rgb(141, 191, 198); 
+  background-color: rgb(141, 191, 198);
+  height: 6px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: relative;
+}
+
+.linea_footer {
+  background-color: rgb(141, 191, 198);
+  height: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+/* Posicion de los items (iconos) en el navbar*/
+
+#navbarSupportedContent {
+  justify-content: flex-end;
+  width: 60px;
+}
+
+/* Footer */
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  font-weight: bold;
+  color: rgb(0, 80, 94); 
+  clear: left;
+}
+
+footer p {
+	color: white;
+	font-size: 18px;
+	letter-spacing: .4px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+}
+
+.base {
+  background: rgb(0, 80, 94);
+  height: 100%;
+}
+
+/* ===================== Nosotros ===================== */
+
+.txt_quienes {
+  text-align: center;
+  width:90%;
+  margin-top: 0;
+  line-height: 200%;
+}
+
+/* ===================== Contactenos ===================== */
+
+
+.login {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: auto;
+}
+
+label {
+  margin-top: 0px;
+  letter-spacing:1px;
+  width: 70%;
+  padding-left: 0;
+  color: rgb(0, 80, 94);
+}
+
+.label-default{
+  display: none;
+}
+
+.form-control {
+  position: relative;
+}
+
+form {
+  width: 100%;
+  height: 570px;
+  padding-left: 0px;
+  position: relative;
+}
+
+
+input, textarea {
+  width: 80px;
+  height:70px;
+  border:2px solid #f6f6f6;
+  padding:10px;
+  padding-bottom: 20px;
+  margin-top:15px;
+  font-size: 25px;
+  color:#ffffff;
+}
+
+textarea {
+  height:100px;
+
+}
+
+#submit {
+  width:85px;
+  height:35px;
+  border:block;
+  margin-top:40px;
+  cursor:pointer;
+}
+
+.botonContacto {
+  align-items: center;
+  margin: auto;
+}
+
+/* Inicio de sesion  */
+
+* { box-sizing:border-box; }
+
+hgroup { 
+  margin-top: 50px;
+	text-align:center;
+}
+
+
+form {
+	width: 380px;
+	margin: 4em auto;
+  margin-right: 25em;
+	padding: 3em 2em 2em 2em;
+	background: white;
+}
+
+.group { 
+	position: relative; 
+	margin-bottom: 45px;
+  columns:rgb(0, 77, 93);
+}
+
+input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+	display: block;
+	background: white;
+	color: black;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+input:focus { outline: none; }
+
+
+/* Label */
+
+label {
+	color: #999; 
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: all 0.2s ease;
+}
+
+/* active */
+
+input:focus ~ label, input.used ~ label {
+	color:  rgb(0, 77, 93);
+}
+
+
+/* Underline */
+
+.bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px; 
+	width: 0;
+	bottom: 1px; 
+	position: absolute;
+	background: rgb(0, 77, 93); 
+	transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+
+/* active */
+
+input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+
+/* Animations */
+
+@keyframes inputHighlighter {
+	from { background: rgb(0, 77, 93); }
+	to 	{ width: 0; background: transparent; }
+}
+
+
+/* Button */
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  margin: .3em 0 1em 0;
+  width: 35%;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  align-items: center;
+}
+
+.button:focus { outline: 0; }
+
+
+/* Button modifiers */
+
+.buttonBlue {
+  background: rgb(0, 77, 93);
+}
+
+.buttonBlue:hover { 
+  opacity: 0.8;
+}
+
+
+/* Ripples container */
+
+.ripples {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+
+/* Ripples circle */
+
+.ripplesCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.ripples.is-active .ripplesCircle {
+  animation: ripples .4s ease-in;
+}
+
+/* Botones Usuario-TEI */
+
+.botonTEI {
+  width: 48%;
+  margin: auto;
+  color: rgb(228, 149, 7);
+  font-weight: bold;
+  margin-bottom: 5%;
+  font-size: medium;
+}
+
+
+/* Responsive Styles */
+
+/*Responsividad para dispositivis con un ancho mayor a 1200px */
+@media (min-width: 1200px) {
+
+  .viewport {
+    height: 0px;
+  }
+
+  .base {
+    font-size: 1vw;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    }
+
+}
+
+
+/*Responsividad menor que */
+
+@media (max-width: 1400px) {
+  .botonTEI {
+    width: 30%;
+  }
+
+  #texto-footer {
+    font-size: 1.1em;
+}
+@media (max-width: 1200px) {
+
+  .login {
+    width: 65%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .hidden-xs {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+  .viewport {
+    height: 0px;
+  }
+    
+  .navbar-nav {
+    position: relative;
+    z-index: 10000;
+    background-color: white;
+    }
+
+  }
+
+  
+  @media (min-width: 1150px) {
+
+    #cabecera {
+      float: none;
+    }
+} 
+
+
+@media (max-width: 1000px) {
+
+  #logo-tei {
+    margin-top: 0px;
+    height: 90px;
+    width: 110px;
+  }
+
+  #texto-footer {
+    font-size: 1em;
+    margin: auto;
+  }
+
+  .botonTEI {
+    width: 33%;
+  } 
+
+  .login {
+    width: 70%;
+  }
+  
+}
+
+
+@media (max-width: 900px) {
+
+  .visible-xs {
+    display: none;
+
+  }
+
+  .botonTEI {
+    width: 35%;
+  }
+
+  .tei-texto {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .tei-texto-contacto {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 28px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .botonTEI {
+    width: 38%;
+  }
+
+}
+
+
+@media (max-width:768px) {     /*======= Menos de 768 px =======*/ 
+
+  /* Menu inical */
+  .navbar-light {
+    height: 80px;
+    padding: 0;
+    position: relative;
+  }
+
+  .hidden-xs {
+    width: 55px;
+    height: 55px;
+    display: block;
+  }
+
+  #info {
+    padding: 10px;
+  }
+ 
+  .txt_quienes {
+    font-size: 2vw;
+  }
+
+  .navbar-light {
+    height: 100px;
+    padding: 0;
+    position: relative;
+  }
+
+  .base {
+  font-size: 2vw;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  }
+
+  #logo-tei {
+    margin-top: 0px;
+    height: 70px;
+    width: 90px;
+  }
+
+  .login {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .tei-texto {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .tei-texto-contacto {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .botonTEI {
+    width: 45%;
+    font-size: small;
+  }
+
+  #texto-footer {
+    font-size: 1.2em;
+    margin: auto;
+  }
+}
+
+@media (max-width: 630px) {
+ 
+  .botonTEI {
+    width: 45%;
+    font-size: small;
+  }
+}
+
+@media (max-width: 600px) {
+  h5 {
+    font-size: 16px;
+  }
+
+  .botonTEI {
+    width: 45%;
+    font-size: small;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .login {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .base {
+    font-size: 2vw;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    }
+
+    #quienes-somos {
+      font-size: 2vw;
+    }
+  
+    .tei-texto {
+      margin-top: 3%;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .tei-texto-contacto {
+      margin-top: 3%;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    #texto-footer {
+      font-size: 14px;
+      margin: auto;
+    }
+
+    .botonTEI {
+      width: 48%;
+      font-size: 11px;
+    }
+
+}
+
+
+@media (max-width:500px) {   
+#texto-footer {
+  font-size: 1.3em;
+  margin: auto;
+}
+}
+
+@media (max-width:475px) {    
+  .button {
+    width: 50%;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  #texto-footer {
+  font-size: 1.35em;
+  margin: auto;
+}
+
+.botonTEI {
+  width: 48%;
+  font-size: 9px;
+}
+
+}
+
+@media (max-width:400px) {     /*======= Menos de 400 px =======*/
+
+  .botonServicios {
+    margin-left: 60%;
+  }
+  
+  .tei-texto {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .botonTEI {
+    width: 49%;
+    font-size: 9px;
+  }
+
+  #texto-footer {
+    font-size: 1.32em;
+    margin: auto;
+  }
+}
+
+@media (max-width:300px) {     /*======= Menos de 300 px =======*/
+
+  base {
+    font-size: 0.5vw;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    }
+
+    .botonTEI {
+      width: 47%;
+      font-size: 8;
+    }
+
+    #texto-footer {
+      font-size: 1.2em;
+      margin: auto;
+    }
+
+}
+
+@media only screen and (max-width:1400px) {
+  [class*="prueba-responsive"] {
+    width: 90%;
+    float: none;
+    margin: auto;
+}
+
+}
+
+@media (max-height: 930px) {
+  .login {
+    height: 600px;
+
+  }
+}
+}
