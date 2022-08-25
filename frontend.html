@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/imagenes/iconos/favicon.png" type="image/png" />
+    <title>TEI</title>
+</head>
+
+<body style="font-family: Arial; background-color: black;">
+    <main
+        style="background-color: ghostwhite ; border-radius: 10px; max-width: 600px; width: 80%; border: 1px solid black; margin: 30px auto; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+        <h1>Bienvenido a TEI</h1>
+        <h2>Tablero Eléctrico Inteligente</h2>
+
+        <div style="display: flex; gap: 20px;">
+            <img id="network" style="width: 50px;" src="./img/imagenes/iconos/conexion-off2.png" alt="">
+            <h4 id="network_status">Offline</h4>
+            <input style="display: none;" onchange="notification('network')" type="checkbox" id="network_check">
+
+        </div>
+        <section>
+            <input onclick="control('on')" style="width: 80px;" type="image"
+                src="./img/imagenes/iconos/encendido-off.png">
+            <input onclick="control('off')" style="width: 80px;" type="image"
+                src="./img/imagenes/iconos/apagado-off.png">
+        </section>
+
+        <section style=" display: flex; flex-direction: column; text-align: center; color: grey">
+            <h3>Last activity</h3>
+            <label for="">No available</label>
+
+            <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: center;">
+                <img id="water" style="width: 100px;" src="./img/imagenes/iconos/gota-off2.png" alt="">
+                <input style="display: none;" onchange="notification('state')" type="checkbox" id="water_check">
+            </div>
+
+            <div style="margin-top: 10px;">
+                <h3>Security alerts</h3>
+                <img style="width: 60px;" src="./img/imagenes/iconos/supervisor-off.png" alt="">
+                <img style="width: 60px;" src="./img/imagenes/iconos/nivel-off.png" alt="">
+                <img style="width: 60px;" src="./img/imagenes/iconos/termico-off.png" alt="">
+            </div>
+        </section>
+    </main>
+    <!-- Scripts -->
+    <script src="./js/aws-sdk.min.js"></script>
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="./js/query.js"></script>
+    <script src="./js/basic.js"></script>
+</body>
+
+</html>
