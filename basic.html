@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>TEI</title>
+
+  <head>
+    <!-- agregado el meta charset UTF-8 para los carácteres como las tildes y la letra ñ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Refresh" content="1800"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Se eliminá el cache cada vez que se llego a la index.hmtl, cuidado cabecera perligrosa-->
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="google-site-verification" content="FOZxWmSQhvTTOeeXxEYeAfyHCm2NCPSOeP4_tw-KkSE" />
+  
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Agropezim Group C.A. </title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- normalize CSS -->
+    <!-- <link href="css/normalize.css" rel="stylesheet"> -->
+
+    <!-- bootstrap js core -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+  
+    <!-- mover carrusel desde JavaScript -->
+    <script src="js/jquery.tinycarousel.min.js"></script>
+    <link  rel="icon"   href="imagenes/iconos/favicon.png" type="image/png" />
+  
+  
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    
+    <link  rel="icon"   href="imagenes/iconos/favicon.png" type="image/png" />
+
+  </head>
+
+    <!-- Barra de logo e iconos -->
+    <nav class="navbar container-fluid navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <a href="/"><img src="imagenes/iconos/TEI.png" id="logo1"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" onclick="redirectToLogin();">
+                <img src="imagenesWeb/iconos/iconosNuevos/logout2.png" class="hidden-xs btn_logout">
+                <label class="visible-xs" align-content="center" onclick="location.href='';">
+                  <h2><span class="label label-default">Logout</span></h2>
+                </label>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    
+    </nav>
+
+    <div class="container-fluid" id="cabecera">
+      
+      <div class="linea_divisora1"></div>
+    
+      <div class="linea_divisora3"></div>
+      
+      <div class="linea_divisora2"></div>
+      
+    </div><br>
+
+    <div style="width: 100%;">
+      <input style="margin-left: 90%;" type="image" id="derecha2" src="imagenes/iconos/conexion-off2.png"></input>
+    </div>
+
+    <!-- First Grid -->
+    <hgroup style="margin-top: 0%; margin-bottom: 0%;">
+      <h1 style="color: rgb(0, 77, 93); font-weight: bold; margin-bottom: 0px;">Bienvenido a TEI</h>
+      <h3 style="color: rgb(0, 77, 93); margin-bottom: 0px;">Tablero Eléctrico Inteligente</h3>
+    </hgroup>
+    
+    <div class="w3-light-grey w3-container">
+      
+      <div class="w3-content">
+        <div class="w3-twothird">
+          <input id="derecha" type="image" alt="ON" src="imagenes/iconos/encendido-off.png" onclick="on()"><b>Encender</b></input>
+        </div>
+      </div>
+
+      <div class="w3-content">
+        <div class="w3-twothird">
+          <input id="izquierda" type="image" alt="OFF" src="imagenes/iconos/apagado-on.png" onclick="off()"><b>Apagar</b></input>
+        </div>
+      </div>
+    
+    </div><br> 
+
+    <hgroup>
+      <h5 style="color: rgb(0, 77, 93);">Última actividad de su tablero:</h5>
+      <h5 style="color: rgb(216, 48, 37);" id="label">Actualizando...</h5><br>
+    </hgroup>
+  
+
+    <div>
+      <input  type="image" id="derecha1" src="imagenes/iconos/gota-off2.png"></input>
+    </div>
+
+    <hgroup>
+      <h5 class="alertas-titulo">Alertas de seguridad:</h5><br>
+    </hgroup>
+
+    <div class="w3-light-grey-alert w3-container">
+      <div class="w3-content-alert">
+        <div class="w3-twothird">
+          <input type="image" id="phase" src="imagenes/iconos/supervisor-off3.png"></input>
+          <div class="capa">
+            <input type="image" src="imagenes/iconos/supervisor-capa2.png"></input>
+          </div>   
+        </div>
+      </div>
+      
+      <div class="w3-content-alert">
+        <div class="w3-twothird">
+          <input type="image" id="level" src="imagenes/iconos/nivel-off3.png"></input> 
+          <div class="capa">
+            <input type="image" src="imagenes/iconos/nivel-capa2.png"></input>
+          </div>   
+        </div>
+      </div>
+      
+      <div class="w3-content-alert">
+        <div class="w3-twothird">
+          <input type="image" id="thermal" src="imagenes/iconos/termico-off3.png"></input>
+          <div class="capa">
+            <input type="image" src="imagenes/iconos/termico-capa2.png"></input>
+          </div>       
+        </div>
+      </div>
+  </div>
+
+
+  <footer class="bg-light text-md-start">
+      
+    <div style="height: 10px;" class="linea_divisora1"></div>
+    <div style="height: 10px;" class="linea_divisora3"></div>
+    
+    <div class="base">
+      <p id="texto-footer">Agropezim Group C.A. RIF: J-404095969 Venezuela, <br> 
+      San Felipe - Estado Yaracuy. Todos los Derechos Reservados 2014. <br>
+      Tablero Eléctrico Inteligente <br>
+      Contáctenos a ventas@tei.com.ve / +58 424 506 93 73</p><br>
+    </div>
+    
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/aws-sdk-2.7.16.min.js"></script>
+  <script src="./js/sweetalert.min.js"></script>
+  <script src="./js/basic.js"></script>
+  <script src="./js/query.js"></script>
+
+  </body>
+</html>
